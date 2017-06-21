@@ -1,0 +1,137 @@
+#indexMain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+#indexMain .login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  margin-top: -8rem;
+}
+#indexMain .login-content .logo {
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  border-radius: 50%;
+  background: #00ff00;
+}
+#indexMain .input-outer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+#indexMain .input-outer .user-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+#indexMain .input-outer .password-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+#indexMain .input-outer input {
+  flex: 1;
+  height: 2rem;
+  margin-left: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+#indexMain .input-outer .reset-input-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+}
+#indexMain .input-outer .reset-input-outer .reset-input {
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  background: #dcdcdc;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+  transform: rotate(45deg);
+}
+#indexMain .input-outer .reset-input-outer .reset-input:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 2px;
+  background: #dcdcdc;
+  transform: rotate(-90deg);
+}
+#indexMain .user-tips-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 20rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+#indexMain .user-tips-bar span {
+  color: #31a8e6;
+}
+#indexMain .btn-bar {
+  height: 3rem;
+  margin-top: 1rem;
+}
+#indexMain .note-btn {
+  width: 19rem;
+  height: 3rem;
+  margin: 0 auto;
+  border-radius: 4px;
+  background: #317dd3;
+  color: #ffffff;
+}
+#indexMain .login-btn {
+  line-height: 3rem;
+  text-align: center;
+}
+#indexMain .register-btn {
+  line-height: 3rem;
+  text-align: center;
+}
+#indexMain .resetPassword-btn {
+  line-height: 3rem;
+  text-align: center;
+}
+#indexMain .err-bar {
+  position: absolute;
+  bottom: 10rem;
+  width: 100%;
+  height: 2rem;
+}
+#indexMain .err-bar p {
+  text-align: center;
+  line-height: 2rem;
+  color: #ffffff;
+}
+#indexMain input[placeholder],
+#indexMain [placeholder],
+#indexMain *[placeholder] {
+  color: #bdc3c7 !important;
+}
