@@ -6,7 +6,6 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
 	state: {
-		accountNo: '',
 		loginKey: localStorage.getItem('loginKey') ? localStorage.getItem('loginKey') : '',
 		userNickName: '',
 		registerAccountNum: '',
