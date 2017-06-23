@@ -1,0 +1,56 @@
+#noteDetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+#noteDetail nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background: #11ccff;
+}
+#noteDetail nav .goback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: url('../../assets/right.png') no-repeat center center;
+  transform: rotate(180deg);
+}
+#noteDetail nav .edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+#noteDetail .detail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+  background: #fdffff;
+  overflow: hidden;
+}
+#noteDetail .detail-content .detail-title {
+  line-height: 4rem;
+  text-align: center;
+  font-size: 3rem;
+}
+#noteDetail .detail-content .detail-main-outer {
+  width: 109%;
+  padding-left: 2rem;
+  padding-right: 1.8rem;
+  overflow-y: scroll;
+}
+#noteDetail .detail-content .detail-main-outer .detail-main {
+  line-height: 2rem;
+}

@@ -1,0 +1,57 @@
+@blue: #11ccff;
+#noteDetail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 5rem;
+        background: @blue;
+        .goback {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            background: url('./../../assets/right.png') no-repeat center center;
+            transform: rotate(180deg);
+        }
+        .edit {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+    .detail-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        flex: 1;
+        background: #fdffff;
+        overflow: hidden;
+        .detail-title {
+            line-height: 4rem;
+            text-align: center;
+            font-size: 3rem;
+        }
+        .detail-main-outer {
+            width: 109%;
+            padding-left: 2rem;
+            padding-right: 1.8rem;
+            overflow-y: scroll;
+            .detail-main {
+                line-height: 2rem;
+            }
+        }
+    }
+}

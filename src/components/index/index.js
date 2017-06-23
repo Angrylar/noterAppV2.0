@@ -1,7 +1,7 @@
 import $server from '../../server.js'
 import regExp from '../../regExp.js'
 export default {
-	name: 'notepreview',
+	name: 'indexMain',
 	data() {
 		return {
 			loginUserAccountNum: '',
@@ -18,6 +18,13 @@ export default {
 			registerWin: false,
 			resetPasswordWin: false,
 			focA: false,
+			focB: false,
+			focAA: false,
+			focBB: false,
+			focCC: false,
+			focAAA: false,
+			focBBB: false,
+			focCCC: false,
 		}
 	},
 	created() {
@@ -48,7 +55,7 @@ export default {
 			setTimer(del());
 		},
 		go: function (msg) {
-			// this.$route.push({name:'msg'})
+			this.$router.push({ name: msg })
 		},
 		change: function (msg) {
 			let vm = this;
@@ -95,8 +102,12 @@ export default {
 							.then(function (resp) {
 								if (resp.code == 10001) {
 									console.log(`登录成功！${resp.msg}`);
-									// this.go()
+									window.localStorage.setItem('loginKey', resp.result.loginKey);
+									vm.$store.commit('setLoginKey', resp.result.loginKey);
+									console.log(vm.$store.state.user.loginKey)
+									vm.go('noteList')
 								} else {
+									console.log(resp)
 									vm.errBarAnimate(`${resp.msg}`);
 								}
 							}).catch(function (err) {
@@ -197,8 +208,6 @@ export default {
 			}
 		},
 		resetInput: function (arg) {
-			console.log(arg)
-			console.log('234')
 			this[arg] = '';
 		},
 
