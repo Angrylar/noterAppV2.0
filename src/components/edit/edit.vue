@@ -11,7 +11,7 @@
             <div class="title-bar">
                 <p>笔记题目</p>
                 <div class="input-outer">
-                    <input type="text" name="" value="">
+                    <input type="text" name="" value="" v-model='title'>
                 </div>
             </div>
             <div class="edit-content-outer">

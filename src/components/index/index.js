@@ -91,6 +91,7 @@ export default {
 			let argObjb = {};
 			argObjb.value = vm.loginUserPassword;
 			argObjb.name = '密码';
+			console.log(argObja)
 			if (vm.check(argObja, argObjb)) {
 				if (vm.loginUserPassword > 5) {
 					if (/^1[34578]\d{9}$/.test(vm.loginUserAccountNum)) {

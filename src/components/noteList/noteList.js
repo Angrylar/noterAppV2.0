@@ -100,7 +100,7 @@ export default {
 			this.$router.push({ name: 'noteDetail' })
 		},
         newNote: function () {
-            this.commit('setNoteState', 'new');
+            this.$store.commit('setNoteState', 'new');
             this.$router.push({ name: 'edit' });
         }
     }

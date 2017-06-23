@@ -34,7 +34,7 @@ export default {
             this.$router.back()
         },
         edit: function () {
-            this.commit('setNoteState', 'edit');
+            this.$store.commit('setNoteState', 'edit');
             this.$router.push({ name: 'edit' });
         }
     }
